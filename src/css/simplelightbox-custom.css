@@ -29,7 +29,7 @@
   right: 25px;
   width: 14px;
   height: 14px;
-  background: url('./img/icons/close-icon.svg') no-repeat center center;
+  background: url('../img/icons/close-icon.svg') no-repeat center center;
 }
 
 .sl-wrapper .sl-navigation button.sl-prev,
@@ -40,11 +40,11 @@
 }
 
 .sl-wrapper .sl-navigation button.sl-prev {
-  background: url('./img/icons/arrow-left-icon.svg') no-repeat center center;
+  background: url('../img/icons/arrow-left-icon.svg') no-repeat center center;
 }
 
 .sl-wrapper .sl-navigation button.sl-next {
-  background: url('./img/icons/arrow-right-icon.svg') no-repeat center center;
+  background: url('../img/icons/arrow-right-icon.svg') no-repeat center center;
 }
 
 .sl-wrapper .sl-counter {
