@@ -1,0 +1,91 @@
+.feedback-form {
+  margin: 0 auto;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-form-label {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.feedback-form-label:last-of-type {
+  margin-bottom: 16px;
+}
+
+.form-control {
+  padding: 8px 0 8px 16px;
+  width: 250px;
+  color: var(--text-color);
+  background-color: transparent;
+  outline: transparent;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-control::placeholder {
+  color: var(--text-color);
+}
+
+.form-control:hover {
+  border-color: #000;
+}
+
+.form-control:focus {
+  border-color: var(--border-color);
+}
+
+.feedback-form-input {
+  height: 40px;
+}
+
+.feedback-form-textarea {
+  height: 80px;
+  resize: none;
+}
+
+.feedback-form-btn {
+  padding: 8px 16px;
+  display: block;
+  min-width: 95px;
+  min-height: 40px;
+  align-self: flex-start;
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--light-color);
+  border-radius: 8px;
+  background: var(--accent-color);
+  transition: background-color 250ms ease;
+}
+
+.feedback-form-btn:hover,
+.feedback-form-btn:focus {
+  background-color: var(--hover-color);
+}
+
+.form-error-message {
+  padding: 15px 0 0;
+  align-self: flex-start;
+  font-weight: 500;
+  color: var(--error-color);
+}
+
+@media screen and (min-width: 768px) {
+  .feedback-form {
+    max-width: 360px;
+  }
+
+  .form-control {
+    width: 360px;
+  }
+}

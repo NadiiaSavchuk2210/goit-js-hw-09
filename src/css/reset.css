@@ -24,11 +24,31 @@ a {
 }
 
 button {
+  border: none;
+  padding: 0;
   cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  border: none;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:checked {
+  outline: none;
+  border: none;
 }

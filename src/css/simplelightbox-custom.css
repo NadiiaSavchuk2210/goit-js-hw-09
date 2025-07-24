@@ -1,0 +1,99 @@
+.sl-wrapper.simple-lightbox .sl-image {
+  top: 28px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.sl-wrapper .sl-image img {
+  object-fit: cover;
+}
+
+.sl-wrapper.simple-lightbox .sl-image,
+.sl-wrapper .sl-image img,
+.sl-wrapper.simple-lightbox .sl-caption {
+  width: 230px !important;
+  height: auto !important;
+}
+
+.sl-wrapper .sl-close,
+.sl-wrapper .sl-navigation button {
+  background-size: contain;
+  color: transparent;
+  border: none;
+  outline: none;
+}
+
+.sl-wrapper .sl-close {
+  margin: 0;
+  top: 25px;
+  right: 25px;
+  width: 14px;
+  height: 14px;
+  background: url('./img/icons/close-icon.svg') no-repeat center center;
+}
+
+.sl-wrapper .sl-navigation button.sl-prev,
+.sl-wrapper .sl-navigation button.sl-next {
+  top: 20%;
+  width: 12px;
+  height: 20px;
+}
+
+.sl-wrapper .sl-navigation button.sl-prev {
+  background: url('./img/icons/arrow-left-icon.svg') no-repeat center center;
+}
+
+.sl-wrapper .sl-navigation button.sl-next {
+  background: url('./img/icons/arrow-right-icon.svg') no-repeat center center;
+}
+
+.sl-wrapper .sl-counter {
+  top: 16px;
+  left: 16px;
+  color: var(--light-color);
+}
+
+.sl-overlay {
+  opacity: 1 !important;
+  background-color: rgba(46, 47, 66, 0.8);
+}
+
+@media screen and (min-width: 768px) {
+  .sl-wrapper .sl-navigation button.sl-prev,
+  .sl-wrapper .sl-navigation button.sl-next {
+    top: 40%;
+    transform: translateY(-50%);
+  }
+
+  .sl-wrapper.simple-lightbox .sl-image,
+  .sl-wrapper .sl-image img,
+  .sl-wrapper.simple-lightbox .sl-caption {
+    width: 600px !important;
+    height: auto !important;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .sl-wrapper.simple-lightbox .sl-image,
+  .sl-wrapper .sl-image img {
+    width: 1112px !important;
+    height: 640px !important;
+  }
+
+  .sl-wrapper.simple-lightbox .sl-caption {
+    width: 1112px !important;
+  }
+
+  .sl-wrapper .sl-navigation button.sl-prev,
+  .sl-wrapper .sl-navigation button.sl-next {
+    top: 50%;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.35s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.35s ease-out forwards;
+}
