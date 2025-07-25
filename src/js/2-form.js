@@ -5,13 +5,15 @@ const feedbackFormEl = document.querySelector('.feedback-form');
 let formData = { email: '', message: '' };
 const formLSKey = 'feedback-form-state';
 
-document.addEventListener('DOMContentLoaded', handleDOMContentLoaded);
+initFormState();
+
 feedbackFormEl.addEventListener('input', handleFormElInput);
 feedbackFormEl.addEventListener('submit', handleFormElSubmit);
 
 //!======================================================
-function handleDOMContentLoaded() {
+function initFormState() {
   const data = getDataFromLS(formLSKey);
+
   try {
     if (data && typeof data === 'object') {
       formData.email = data.email || '';
